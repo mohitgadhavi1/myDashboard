@@ -1,8 +1,9 @@
 import React from "react";
 import TimerApp from "./TimerApp";
-import Container from "./styles/Container";
+import Container from "../styles/Container";
+import TaskApp from "./TaskApp/TaskApp";
 
-const components = [<TimerApp />, <TimerApp />];
+const components = [<TaskApp />, <TimerApp />];
 
 function App() {
   return (
