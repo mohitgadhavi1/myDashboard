@@ -17,8 +17,8 @@ function TimerApp() {
     <TimerAppStyle>
       <h6>{cTime}</h6>
       <div className="timer-btn">
-        <Button name="start" />
-        <Button name="stop" />
+        <Button>start</Button>
+        <Button>stop</Button>
       </div>
     </TimerAppStyle>
   );

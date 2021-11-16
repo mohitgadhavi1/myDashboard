@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-function Button({ name, type }) {
-  return <ButtonStyle type={type}>{name}</ButtonStyle>;
+function Button({ children, type, onClick }) {
+  return (
+    <ButtonStyle onClick={onClick} type={type}>
+      {children}
+    </ButtonStyle>
+  );
 }
 
 export default Button;

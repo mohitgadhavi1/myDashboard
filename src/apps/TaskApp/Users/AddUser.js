@@ -64,7 +64,7 @@ const AddUser = (props) => {
           Age (Years)
         </Input>
 
-        <Button type="submit" name="Add User" />
+        <Button type="submit">Add User</Button>
       </form>
     </div>
   );
