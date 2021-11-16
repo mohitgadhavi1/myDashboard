@@ -12,4 +12,10 @@ function Input({ children, type, value, onChange }) {
 
 export default Input;
 
-const InputStyle = styled.div``;
+const InputStyle = styled.div`
+  margin: 1rem;
+  & label {
+    text-transform: capitalize;
+    padding-right: 5px;
+  }
+`;

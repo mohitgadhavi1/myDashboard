@@ -12,10 +12,6 @@ function App() {
         <h1>Projects</h1>
       </header>
       <main>
-        {/* <Container>
-           <TimerApp />
-        </Container> */}
-
         {components.map((items) => {
           return <Container>{items}</Container>;
         })}
