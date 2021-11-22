@@ -12,8 +12,15 @@ import React from "react";
 import TimerApp from "./TimerApp";
 import Container from "../styles/Container";
 import TaskApp from "./TaskApp/TaskApp";
+import Colorpicker from "./Colorpicker";
+import Filerecognizer from "./Filerecognizer";
 
-const components = [<TaskApp />, <TimerApp />];
+const components = [
+  <TaskApp />,
+  <TimerApp />,
+  <Colorpicker />,
+  <Filerecognizer />,
+];
 
 function App() {
   return (
