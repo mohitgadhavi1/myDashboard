@@ -19,17 +19,17 @@ const BirthdayAppStyle = styled.div`
   color: hsl(209, 61%, 16%);
   background: #f28ab2;
   display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 95%;
+  width: 95%;
+  border-radius: 5px;
+  overflow-y: scroll;
+
   p {
     color: hsl(210, 22%, 49%);
   }
   .person {
-    display: flex;
-    flex-direction: column;
-    column-gap: 0.75rem;
-    margin-bottom: 1.5rem;
     align-items: center;
   }
   .person img {
