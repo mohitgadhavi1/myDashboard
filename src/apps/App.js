@@ -14,12 +14,14 @@ import Container from "../styles/Container";
 import TaskApp from "./TaskApp/TaskApp";
 import Colorpicker from "./Colorpicker";
 import Filerecognizer from "./Filerecognizer";
+import BirthdayApp from "./BirthdayApp/BirthdayApp";
 
 const components = [
   <TaskApp />,
   <TimerApp />,
   <Colorpicker />,
   <Filerecognizer />,
+  <BirthdayApp />,
 ];
 
 function App() {
