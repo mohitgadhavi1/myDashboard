@@ -49,7 +49,7 @@ const PigGameStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position: absolute;
   height: 100%;
   width: 100%;
   .player--0 {

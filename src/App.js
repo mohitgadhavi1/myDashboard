@@ -14,8 +14,15 @@ import Container from "./styles/Container";
 import TaskApp from "./apps/TaskApp/TaskApp";
 import BirthdayApp from "./apps/BirthdayApp/BirthdayApp";
 import PigGame from "./apps/PigGame/PigGame";
+import Calculator from "./apps/Calculator/Calculator";
 
-const components = [<BirthdayApp />, <TaskApp />, <TimerApp />, <PigGame />];
+const components = [
+  <BirthdayApp />,
+  <TaskApp />,
+  <TimerApp />,
+  <PigGame />,
+  <Calculator />,
+];
 
 function App() {
   return (
