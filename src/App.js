@@ -9,20 +9,13 @@
 // 4.google map api --- show map from google.
 
 import React from "react";
-import TimerApp from "./TimerApp";
-import Container from "../styles/Container";
-import TaskApp from "./TaskApp/TaskApp";
-import Colorpicker from "./Colorpicker";
-import Filerecognizer from "./Filerecognizer";
-import BirthdayApp from "./BirthdayApp/BirthdayApp";
+import TimerApp from "./apps/TimerApp/TimerApp";
+import Container from "./styles/Container";
+import TaskApp from "./apps/TaskApp/TaskApp";
+import BirthdayApp from "./apps/BirthdayApp/BirthdayApp";
+import PigGame from "./apps/PigGame/PigGame";
 
-const components = [
-  <TaskApp />,
-  <TimerApp />,
-  <Colorpicker />,
-  <Filerecognizer />,
-  <BirthdayApp />,
-];
+const components = [<BirthdayApp />, <TaskApp />, <TimerApp />, <PigGame />];
 
 function App() {
   return (

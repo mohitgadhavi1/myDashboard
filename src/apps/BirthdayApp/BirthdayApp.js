@@ -25,6 +25,28 @@ const BirthdayAppStyle = styled.div`
   width: 95%;
   border-radius: 5px;
   overflow-y: scroll;
+  align-items: center;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f28ab2;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: pink;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
   p {
     color: hsl(210, 22%, 49%);

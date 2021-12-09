@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-function Button({ children, type, onClick }) {
+function Button({ children, type, onClick, className }) {
   return (
-    <ButtonStyle onClick={onClick} type={type}>
+    <ButtonStyle onClick={onClick} type={type} className={className}>
       {children}
     </ButtonStyle>
   );
@@ -13,8 +13,7 @@ export default Button;
 
 const ButtonStyle = styled.button`
   display: inline;
-
-  width: 4rem;
+  min-width: 4rem;
   border-radius: 5px;
   color: white;
   background-color: #282c34;
