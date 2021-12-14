@@ -38,23 +38,26 @@ function PigGame() {
       </div>
 
       <img src={dice5} alt="Playing dice" className="dice" />
-      <Button className="btn">🔄 New game</Button>
-      <Button className="btn">🎲 Roll dice</Button>
-      <Button className="btn">📥 Hold</Button>
+      <div className="btn-container">
+        <Button className="btn">🔄 New game</Button>
+        <Button className="btn">🎲 Roll dice</Button>
+        <Button className="btn">📥 Hold</Button>
+      </div>
     </PigGameStyle>
   );
 }
 
 const PigGameStyle = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   position: absolute;
   height: 100%;
   width: 100%;
   .player--0 {
+    left: 5%;
   }
   .player--1 {
+    right: 5%;
   }
   .player {
     position: absolute;
@@ -65,14 +68,20 @@ const PigGameStyle = styled.div`
     border-radius: 5px;
     width: 2rem;
     height: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-container {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
   }
   .btn {
-    position: absolute;
-    bottom: 10%;
     color: black;
     background-color: pink;
 
-    min-width: 6rem;
+    min-width: 5rem;
   }
 `;
 export default PigGame;

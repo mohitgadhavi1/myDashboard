@@ -57,6 +57,7 @@ const TimerAppStyle = styled.div`
     font-size: 24px;
     color: #444;
     text-align: center;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
   }
   .clock::after {
     background: #aaa;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import ErrorModal from "../../../components/ErrorModal";
+import styled from "styled-components";
 
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
@@ -29,7 +30,7 @@ const AddUser = (props) => {
   };
 
   return (
-    <div>
+    <AddTaskStyle>
       {error && (
         <ErrorModal
           title={error.title}
@@ -38,16 +39,33 @@ const AddUser = (props) => {
         />
       )}
 
-      <form onSubmit={addUserHandler}>
+      <form className="form" onSubmit={addUserHandler}>
         <Input
           type="text"
           value={enteredUsername}
           onChange={usernameChangeHandler}
         ></Input>
-        <Button type="submit">Add</Button>
+        <Button className="add-btn" type="submit">
+          Add
+        </Button>
       </form>
-    </div>
+    </AddTaskStyle>
   );
 };
+
+const AddTaskStyle = styled.div`
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  .form {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+`;
 
 export default AddUser;
