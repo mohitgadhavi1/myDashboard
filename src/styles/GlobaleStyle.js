@@ -2,14 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 html {
-    background-color: #282c34;
-  
     font-size: calc(10px + 2vmin);
-    color: white;
   }
   
   body {
+    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(4, 9, 182),rgb(211, 86, 197));
     margin: 0;
+
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -37,32 +36,31 @@ html {
   }
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
+  
   
   header {
-    background-color: #282c34;
+    
     height: 10vh;
     width: 100%;
     display: flex;
     position: absolute;
     top: 0;
-    border-bottom: 2px solid white;
+  //  border-bottom: 2px solid white;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
     padding-bottom: 0.5rem;
+   
   }
   
   main {
+   
     display: grid;
     grid-template-columns: repeat(2, 50%);
-   padding: 4rem;
+    padding: 6rem 4rem 4rem 4rem;
    
-    position: absolute;
+    position: relative;
     top: 10vh;
     min-height: 90vh;
    grid-gap: 3rem;
@@ -72,7 +70,7 @@ html {
   @media only screen and (max-width: 950px){
       main{
         display: flex;
-        padding: 2rem;
+        padding: 6rem 2rem 2rem 2rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;

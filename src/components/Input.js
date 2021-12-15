@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-function Input({ children, type, value, onChange }) {
+function Input({ children, type, value, onChange, className }) {
   return (
     <InputStyle>
       <label htmlFor={children}>{children}</label>
-      <input id={children} type={type} value={value} onChange={onChange} />
+      <input
+        className={className}
+        id={children}
+        type={type}
+        value={value}
+        onChange={onChange}
+      />
     </InputStyle>
   );
 }

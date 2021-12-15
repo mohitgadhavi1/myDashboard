@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "../../../components/Card";
+import styled from "styled-components";
 
-const UsersList = (props) => {
+const TaskList = (props) => {
   return (
-    <Card>
+    <Card bgColor="none" height="70%">
       <ul>
         {props.users.map((user) => (
           <li key={user.id}>{user.name}</li>
@@ -13,4 +14,6 @@ const UsersList = (props) => {
   );
 };
 
-export default UsersList;
+const TaskListStyle = styled.div``;
+
+export default TaskList;

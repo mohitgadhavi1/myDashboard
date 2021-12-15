@@ -4,13 +4,13 @@ import Button from "../../../components/Button";
 import ErrorModal from "../../../components/ErrorModal";
 import styled from "styled-components";
 
-const AddUser = (props) => {
-  const [enteredUsername, setEnteredUsername] = useState("");
+const AddTask = (props) => {
+  const [input, setInput] = useState("");
   const [error, setError] = useState();
 
   const addUserHandler = (event) => {
     event.preventDefault();
-    if (enteredUsername.trim().length === 0) {
+    if (input.trim().length === 0) {
       setError({
         title: "Invalid input",
         message: "Please enter a value.",
@@ -18,12 +18,12 @@ const AddUser = (props) => {
       return;
     }
 
-    props.onAddUser(enteredUsername);
-    setEnteredUsername("");
+    props.onAddUser(input);
+    setInput("");
   };
 
-  const usernameChangeHandler = (event) => {
-    setEnteredUsername(event.target.value);
+  const inputChangeHandler = (event) => {
+    setInput(event.target.value);
   };
   const errorHandler = () => {
     setError(null);
@@ -42,8 +42,9 @@ const AddUser = (props) => {
       <form className="form" onSubmit={addUserHandler}>
         <Input
           type="text"
-          value={enteredUsername}
-          onChange={usernameChangeHandler}
+          value={input}
+          onChange={inputChangeHandler}
+          className="task-input"
         ></Input>
         <Button className="add-btn" type="submit">
           Add
@@ -65,7 +66,21 @@ const AddTaskStyle = styled.div`
     display: flex;
     align-items: baseline;
     width: 100%;
+    // border: 1px solid white;
+  }
+  .task-input {
+    border: 2px solid #5d0cff;
+    border-radius: 5px;
+    outline: none;
+    height: 1.4rem;
+    width: 140%;
+    background: transparent;
+    color: #fff;
+  }
+  .add-btn {
+    position: relative;
+    right: -18%;
   }
 `;
 
-export default AddUser;
+export default AddTask;
