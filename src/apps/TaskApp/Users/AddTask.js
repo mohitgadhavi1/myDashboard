@@ -8,8 +8,12 @@ const AddTask = (props) => {
   const [input, setInput] = useState("");
   const [error, setError] = useState();
 
-  const addUserHandler = (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+    });
+
     if (input.trim().length === 0) {
       setError({
         title: "Invalid input",
@@ -23,6 +27,7 @@ const AddTask = (props) => {
   };
 
   const inputChangeHandler = (event) => {
+    event.preventDefault();
     setInput(event.target.value);
   };
   const errorHandler = () => {
@@ -39,12 +44,14 @@ const AddTask = (props) => {
         />
       )}
 
-      <form className="form" onSubmit={addUserHandler}>
+      <form className="form" onSubmit={submitHandler}>
         <Input
           type="text"
+          placeHolder=" Whats on your Mind?"
           value={input}
           onChange={inputChangeHandler}
           className="task-input"
+          name="text"
         ></Input>
         <Button className="add-btn" type="submit">
           Add

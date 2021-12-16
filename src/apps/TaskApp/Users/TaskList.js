@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const TaskList = (props) => {
   return (
-    <Card bgColor="none" height="70%">
+    <Card height="70%" bottom="2.5%">
       <ul>
         {props.users.map((user) => (
           <li key={user.id}>{user.name}</li>
@@ -14,6 +14,21 @@ const TaskList = (props) => {
   );
 };
 
-const TaskListStyle = styled.div``;
+const TaskListStyle = styled.div`
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+
+  .edit-icon {
+    color: #fff;
+  }
+`;
 
 export default TaskList;

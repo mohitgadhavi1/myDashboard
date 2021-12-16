@@ -24,13 +24,14 @@ function TaskApp() {
 }
 
 const TaskAppStyle = styled.div`
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   background: #161a2b;
   text-align: center;
+  border-radius: 5px;
 `;
 
 export default TaskApp;
