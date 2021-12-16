@@ -30,7 +30,7 @@ const ErrorModalStyle = styled.div`
     position: fixed;
     top: 30vh;
     left: 10%;
-    width: 80%;
+    width: 50%;
     z-index: 100;
     overflow: hidden;
   }

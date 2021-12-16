@@ -4,23 +4,7 @@ import AddTask from "./Users/AddTask";
 import TaskList from "./Users/TaskList";
 
 function TaskApp() {
-  const [usersList, setUsersList] = useState([]);
-
-  const addUserHandler = (uName, uAge) => {
-    setUsersList((prevUsersList) => {
-      return [
-        ...prevUsersList,
-        { name: uName, age: uAge, id: Math.random().toString() },
-      ];
-    });
-  };
-
-  return (
-    <TaskAppStyle>
-      <AddTask onAddUser={addUserHandler} />
-      <TaskList users={usersList} />
-    </TaskAppStyle>
-  );
+  return <TaskList />;
 }
 
 const TaskAppStyle = styled.div`

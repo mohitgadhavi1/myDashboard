@@ -2,68 +2,56 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 html {
-    font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmin);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
   body {
-    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(4, 9, 182),rgb(211, 86, 197));
+    display: flex;
+    flex-direction: column;
+ 
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(4, 9, 182),rgb(211, 86, 197));
 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+   /* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: pink;
-    border-radius: 10px;
-  }
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  }
-  
   
   
   header {
-    
+   // border: 1px solid whitesmoke;
+    margin-bottom: 1vh;
     height: 10vh;
-    width: 100%;
     display: flex;
-    position: absolute;
     top: 0;
   //  border-bottom: 2px solid white;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding-bottom: 0.5rem;
+    padding:1rem 0 0 0;
    
   }
   
   main {
+    //border: 1px solid whitesmoke;
    
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    padding: 6rem 4rem 4rem 4rem;
-   
-    position: relative;
-    top: 10vh;
-    min-height: 90vh;
-   grid-gap: 3rem;
+    padding: 4rem 0rem 2rem 5rem;
+  
+    grid-row-gap: 3rem;
     
   }
 
@@ -74,14 +62,9 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
       }
-
-  }
-  
- 
-
- 
+    }
+}
 `;
 
 export default GlobalStyle;

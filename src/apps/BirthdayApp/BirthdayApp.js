@@ -17,7 +17,7 @@ function BirthdayApp() {
 
 const BirthdayAppStyle = styled.div`
   color: hsl(209, 61%, 16%);
-  background: #f28ab2;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -33,9 +33,6 @@ const BirthdayAppStyle = styled.div`
   }
 
   /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f28ab2;
-  }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {

@@ -6,23 +6,13 @@ import styled from "styled-components";
 
 const AddTask = (props) => {
   const [input, setInput] = useState("");
-  const [error, setError] = useState();
 
   const submitHandler = (event) => {
     event.preventDefault();
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
+      text: input,
     });
-
-    if (input.trim().length === 0) {
-      setError({
-        title: "Invalid input",
-        message: "Please enter a value.",
-      });
-      return;
-    }
-
-    props.onAddUser(input);
     setInput("");
   };
 
@@ -30,20 +20,8 @@ const AddTask = (props) => {
     event.preventDefault();
     setInput(event.target.value);
   };
-  const errorHandler = () => {
-    setError(null);
-  };
-
   return (
     <AddTaskStyle>
-      {error && (
-        <ErrorModal
-          title={error.title}
-          message={error.message}
-          onConfirm={errorHandler}
-        />
-      )}
-
       <form className="form" onSubmit={submitHandler}>
         <Input
           type="text"
