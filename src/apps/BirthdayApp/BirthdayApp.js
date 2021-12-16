@@ -45,8 +45,12 @@ const BirthdayAppStyle = styled.div`
     background: #555;
   }
 
+  h3 {
+    color: antiquewhite;
+  }
+
   p {
-    color: hsl(210, 22%, 49%);
+    color: grey;
   }
   .person {
     align-items: center;

@@ -4,7 +4,11 @@ import AddTask from "./Users/AddTask";
 import TaskList from "./Users/TaskList";
 
 function TaskApp() {
-  return <TaskList />;
+  return (
+    <>
+      <AddTask />
+    </>
+  );
 }
 
 const TaskAppStyle = styled.div`

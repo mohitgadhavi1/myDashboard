@@ -3,13 +3,23 @@ import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import ErrorModal from "../../../components/ErrorModal";
 import styled from "styled-components";
+import TaskList from "./TaskList";
 
 const AddTask = (props) => {
   const [input, setInput] = useState("");
+  const [tasks, setTasks] = useState([]);
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onSubmit({
+
+    const addTask = (task) => {
+      if (!task.text || /^\s*$/.test(task.text)) {
+        return;
+      }
+      const newTasks = [task, ...tasks];
+      setTasks(newTasks);
+    };
+    addTask({
       id: Math.floor(Math.random() * 10000),
       text: input,
     });
@@ -20,22 +30,36 @@ const AddTask = (props) => {
     event.preventDefault();
     setInput(event.target.value);
   };
+
+  const completeTask = (id) => {
+    let updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        task.isComplete = !task.isComplete;
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+  };
+  console.log(tasks.id);
   return (
-    <AddTaskStyle>
-      <form className="form" onSubmit={submitHandler}>
-        <Input
-          type="text"
-          placeHolder=" Whats on your Mind?"
-          value={input}
-          onChange={inputChangeHandler}
-          className="task-input"
-          name="text"
-        ></Input>
-        <Button className="add-btn" type="submit">
-          Add
-        </Button>
-      </form>
-    </AddTaskStyle>
+    <>
+      <AddTaskStyle>
+        <form className="form" onSubmit={submitHandler}>
+          <Input
+            type="text"
+            placeHolder=" Whats on your Mind?"
+            value={input}
+            onChange={inputChangeHandler}
+            className="task-input"
+            name="text"
+          ></Input>
+          <Button className="add-btn" type="submit">
+            Add
+          </Button>
+        </form>
+      </AddTaskStyle>
+      <TaskList tasks={tasks} completeTask={completeTask} />
+    </>
   );
 };
 
