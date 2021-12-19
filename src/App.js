@@ -15,6 +15,7 @@ import TaskApp from "./apps/TaskApp/TaskApp";
 import BirthdayApp from "./apps/BirthdayApp/BirthdayApp";
 import PigGame from "./apps/PigGame/PigGame";
 import Calculator from "./apps/Calculator/Calculator";
+import Navbar from "./components/Navbar.js/Navbar";
 
 const components = [
   <BirthdayApp />,
@@ -35,6 +36,7 @@ function App() {
           return <Container>{items}</Container>;
         })}
       </main>
+      <Navbar />
     </>
   );
 }

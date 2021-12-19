@@ -41,7 +41,7 @@ const TimerAppStyle = styled.div`
   display: flex;
   width: 95%;
   height: 80%;
-  border: 1px solid white;
+
   position: absolute;
   font-family: sans-serif;
 

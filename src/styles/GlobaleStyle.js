@@ -11,12 +11,12 @@ html {
   body {
     display: flex;
     flex-direction: column;
- 
+    cursor: grab;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(135deg, rgb(4, 9, 182),rgb(211, 86, 197));
-
+    
    /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
