@@ -9,9 +9,8 @@ import store from "./store/index";
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Provider store={store}>
-      <App />
-    </Provider>
+
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
