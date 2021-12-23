@@ -16,6 +16,7 @@ import BirthdayApp from "./apps/BirthdayApp/BirthdayApp";
 import PigGame from "./apps/PigGame/PigGame";
 import Calculator from "./apps/Calculator/Calculator";
 import Navbar from "./components/Navbar.js/Navbar";
+import Auth from "./components/Auth";
 
 const components = [
   <BirthdayApp />,
