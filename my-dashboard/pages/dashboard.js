@@ -1,6 +1,3 @@
-import styles from "../styles/Home.module.css";
-import { Fragment } from "react";
-
 export default function dashboard() {
   return (
     <main className="bg-gray-100 dark:bg-gray-800  h-screen overflow-hidden relative">
