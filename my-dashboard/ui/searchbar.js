@@ -2,11 +2,11 @@ import React from "react";
 
 function Searchbar() {
   return (
-    <header className="w-full shadow-lg bg-white dark:bg-gray-700 items-center h-16 rounded-2xl z-40">
+    <div className="w-full shadow-lg bg-white dark:bg-gray-700 items-center h-16 rounded-2xl z-40">
       <div className="relative z-20 flex flex-col justify-center h-full px-3 mx-auto flex-center">
         <div className="relative items-center pl-1 flex w-full lg:max-w-68 sm:pr-2 sm:ml-0">
           <div className="container relative left-0 z-50 flex w-3/4 h-auto h-full">
-            <div className="relative flex items-center w-full lg:w-64 h-full group">
+            <div className="relative flex items-center w-full lg:w-70 h-full group">
               <div className="absolute z-50 flex items-center justify-center block w-auto h-10 p-3 pr-2 text-sm text-gray-500 uppercase cursor-pointer sm:hidden">
                 <svg
                   fill="none"
@@ -37,18 +37,10 @@ function Searchbar() {
               </div>
             </div>
           </div>
-          <div className="relative p-1 flex items-center justify-end w-1/4 ml-5 mr-4 sm:mr-0 sm:right-auto">
-            <a href="#" className="block relative">
-              <img
-                alt="profil"
-                src="/images/person/1.jpg"
-                className="mx-auto object-cover rounded-full h-10 w-10 "
-              />
-            </a>
-          </div>
+          <div className="relative p-1 flex items-center justify-end w-1/4 ml-5 mr-4 sm:mr-0 sm:right-auto"></div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 

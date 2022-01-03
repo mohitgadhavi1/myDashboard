@@ -2,7 +2,8 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="bg-white h-full rounded-2xl dark:bg-gray-700">
+    // <div className="h-screen  hidden lg:block my-1 ml-4 shadow-lg  relative w-80">
+    <div className="bg-white h-screen lg:block rounded-2xl my-6 ml-4 relative shadow-lg w-80 dark:bg-gray-700">
       <nav className="mt-6">
         <div>
           <a
@@ -133,6 +134,8 @@ function Sidebar() {
         </div>
       </nav>
     </div>
+    //{" "}
+    // </div>
   );
 }
 

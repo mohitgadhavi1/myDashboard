@@ -1,6 +1,6 @@
 import React from "react";
 
-function app5() {
+export default function Calender() {
   return (
     <div className="mb-4">
       <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700">
@@ -189,5 +189,3 @@ function app5() {
     </div>
   );
 }
-
-export default app5;

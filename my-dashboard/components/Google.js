@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "next/image";
 
-function app1() {
+export default function Google() {
   return (
     <div className="mb-4">
       <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
@@ -101,28 +102,28 @@ function app1() {
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/person/1.jpg"
+              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
               alt="Guy"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/person/2.jpeg"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt="Max"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/person/3.jpg"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt="Charles"
             />
           </a>
           <a href="#" className="">
             <img
               className="inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white"
-              src="/images/person/4.jpg"
+              src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="Jade"
             />
           </a>
@@ -134,5 +135,3 @@ function app1() {
     </div>
   );
 }
-
-export default app1;

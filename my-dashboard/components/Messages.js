@@ -1,6 +1,6 @@
 import React from "react";
 
-function app6() {
+export default function Messages() {
   return (
     <div className="mb-4">
       <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
@@ -10,7 +10,7 @@ function app6() {
             <a href="#" className="block relative">
               <img
                 alt="profil"
-                src="/images/person/1.jpg"
+                src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
                 className="mx-auto object-cover rounded-full h-10 w-10 "
               />
             </a>
@@ -27,7 +27,7 @@ function app6() {
             <a href="#" className="block relative">
               <img
                 alt="profil"
-                src="/images/person/5.jpg"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                 className="mx-auto object-cover rounded-full h-10 w-10 "
               />
             </a>
@@ -44,7 +44,7 @@ function app6() {
             <a href="#" className="block relative">
               <img
                 alt="profil"
-                src="/images/person/6.jpg"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                 className="mx-auto object-cover rounded-full h-10 w-10 "
               />
             </a>
@@ -61,7 +61,7 @@ function app6() {
             <a href="#" className="block relative">
               <img
                 alt="profil"
-                src="/images/person/7.jpg"
+                src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                 className="mx-auto object-cover rounded-full h-10 w-10 "
               />
             </a>
@@ -79,5 +79,3 @@ function app6() {
     </div>
   );
 }
-
-export default app6;
