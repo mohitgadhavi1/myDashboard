@@ -1,11 +1,11 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { BellIcon, MenuIcon, XIcon, moonIcon } from "@heroicons/react/outline";
 
 const user = {
-  name: "Tom Cook",
-  email: "tom@example.com",
+  name: "Mohit Gadhavi",
+  email: "mohitgadhavi1@gmail.com",
   imageUrl:
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
@@ -176,6 +176,7 @@ export default function Header() {
                         {user.email}
                       </div>
                     </div>
+
                     <button
                       type="button"
                       className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
