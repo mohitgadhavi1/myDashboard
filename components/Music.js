@@ -7,7 +7,7 @@ export default function Music() {
         <div className="shadow-lg rounded-2xl bg-white dark:bg-gray-700 w-full">
           <div className="flex items-center p-4 justify-between">
             <p className="font-bold text-md text-black dark:text-white">
-              Google
+              Music
             </p>
             <button className="text-sm p-1 text-gray-400 border rounded border-gray-400 mr-4">
               <svg
@@ -41,7 +41,7 @@ export default function Music() {
                   ></path>
                 </g>
               </svg>
-              Create wireframe
+              All of me
             </p>
             <div className="flex items-center">
               <span className="font-bold text-xs dark:text-gray-200 mr-2 ml-2 md:ml-4">
@@ -65,26 +65,7 @@ export default function Music() {
               </button>
             </div>
           </div>
-          <div className="flex items-center p-4 justify-between border-b-2 border-gray-100">
-            <p className="font-bold text-md text-black dark:text-white">
-              Slack
-            </p>
-            <button className="text-sm p-1 text-gray-400 border rounded border-gray-400 mr-4">
-              <svg
-                width="15"
-                height="15"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <g fill="none">
-                  <path
-                    d="M17.222 8.685a1.5 1.5 0 0 1 0 2.628l-10 5.498A1.5 1.5 0 0 1 5 15.496V4.502a1.5 1.5 0 0 1 2.223-1.314l10 5.497z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-              </svg>
-            </button>
-          </div>
+
           <div className="py-2 px-4 text-gray-600 flex items-center justify-between border-b-2 border-gray-100">
             <p className="text-xs flex items-center dark:text-white">
               <svg
@@ -140,7 +121,7 @@ export default function Music() {
                   ></path>
                 </g>
               </svg>
-              Slack logo design
+              Sorry
             </p>
             <div className="flex items-center">
               <span className="text-xs text-gray-400 mr-2 ml-2 md:ml-4">
@@ -179,7 +160,7 @@ export default function Music() {
                   ></path>
                 </g>
               </svg>
-              Dahboard template
+              Walk with me
             </p>
             <div className="flex items-center">
               <span className="text-xs text-gray-400 mr-2 ml-2 md:ml-4">
