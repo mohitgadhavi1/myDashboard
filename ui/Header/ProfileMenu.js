@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon, moonIcon } from "@heroicons/react/outline";
+import { Menu, Transition } from "@headlessui/react";
 
 const user = {
   name: "Mohit Gadhavi",
