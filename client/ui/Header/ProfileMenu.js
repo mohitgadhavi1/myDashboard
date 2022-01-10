@@ -20,7 +20,7 @@ function classNames(...classes) {
 
 export default function Profile() {
   return (
-    <Menu as="div" className="ml-3 relative z-50">
+    <Menu as="div" className="ml-3  relative z-50">
       <div>
         <Menu.Button className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
           <span className="sr-only">Open user menu</span>

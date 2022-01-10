@@ -2,13 +2,12 @@ import React from "react";
 import Header from "../ui/Header/header";
 
 import Sidebar from "../ui/sidebar";
-import Footer from "../ui/footer";
 
 import AppArea from "../ui/AppArea";
 
 export default function Home() {
   return (
-    <>
+    <body className="bg-gray-100 dark:bg-gray-800">
       <Header />
       <main className="bg-gray-100 dark:bg-gray-800  h-screen overflow-hidden relative">
         <div className="flex items-start justify-between">
@@ -18,6 +17,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </>
+    </body>
   );
 }

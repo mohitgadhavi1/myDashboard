@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Data from "../../_data";
 
 export default function Navigation() {
   const navigation = [
@@ -10,11 +11,11 @@ export default function Navigation() {
   ];
 
   return (
-    <div className="hidden md:block">
-      <ul className="ml-10 flex items-baseline space-x-4">
-        {navigation.map((item) => (
+    <div className=" hidden md:block  ml-10 w-max">
+      <ul className=" flex items-baseline space-x-4">
+        {Data.map((item) => (
           <li className="list-none" key={item.id}>
-            <Link href={item.href}>
+            <Link href="#">
               <a
                 id={item.id}
                 name={item.name}
@@ -22,7 +23,7 @@ export default function Navigation() {
                   "text-gray-300 hover:bg-gray-700 hover:text-white  px-3 py-2 rounded-md text-sm font-medium focus:bg-gray-900 text-white "
                 }
               >
-                {item.name}
+                {item.name.toUpperCase()}
               </a>
             </Link>
           </li>
