@@ -1,21 +1,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Data from "../../_data";
+import Data from "../../Data/pageData";
 
 export default function Navigation() {
-  const navigation = [
-    { name: "Countries", id: 0, href: "#" },
-    { name: "Stocks", id: 1, href: "#" },
-    { name: "Socials", id: 2, href: "#" },
-    { name: "Apps", id: 3, href: "#" },
-  ];
-
   return (
     <div className=" hidden md:block  ml-10 w-max">
       <ul className=" flex items-baseline space-x-4">
         {Data.map((item) => (
           <li className="list-none" key={item.id}>
-            <Link href="#">
+            <Link href={item.name}>
               <a
                 id={item.id}
                 name={item.name}

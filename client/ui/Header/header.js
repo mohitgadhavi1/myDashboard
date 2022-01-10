@@ -5,6 +5,7 @@ import { BellIcon, MenuIcon, XIcon, moonIcon } from "@heroicons/react/outline";
 import Navigation from "./Navigation";
 import ProfileMenu from "./ProfileMenu";
 import Searchbar from "./searchbar";
+import Link from "next/link";
 
 const user = {
   name: "Mohit Gadhavi",
@@ -33,20 +34,22 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <>
-      <header className="min-h-full  ">
+      <header className="h-1/6">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                        alt="Workflow"
-                      />
-                    </div>
+                    <Link href="/">
+                      <div className="cursor-pointer flex-shrink-0">
+                        <img
+                          className="h-8 w-8"
+                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                          alt="Workflow"
+                        />
+                      </div>
+                    </Link>
                     <Navigation />
                   </div>
                   <Searchbar />

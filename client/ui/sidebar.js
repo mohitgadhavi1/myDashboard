@@ -1,4 +1,5 @@
 import React from "react";
+import Data from "../Data/pageData";
 import { MdOutlineExplore, MdEmojiFlags } from "react-icons/md";
 import { AiOutlineDollar } from "react-icons/ai";
 import { LightningBoltIcon } from "@heroicons/react/outline";
@@ -26,7 +27,7 @@ function Sidebar() {
   focus:border-blue-500`;
 
   return (
-    <div className="bg-white h-80 lg:block rounded-2xl my-6 ml-4 relative shadow-lg w-80 dark:bg-gray-700">
+    <div className="bg-white h-1/2  lg:block rounded-2xl mt-6 ml-4 relative shadow-lg w-60 dark:bg-gray-700">
       <nav className="mt-6">
         <ul>
           <a className={linkClass} href="#">

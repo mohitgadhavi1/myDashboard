@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../ui/Header/header";
-import Sidebar from "../ui/sidebar";
-import AppArea from "../ui/AppArea";
-import Footer from "../ui/footer";
 
-export default function Home() {
+import Sidebar from "../ui/sidebar";
+
+import AppArea from "../ui/AppArea";
+
+export default function content() {
   return (
     <div className="bg-gray-100 h-screen dark:bg-gray-800">
       <Header />

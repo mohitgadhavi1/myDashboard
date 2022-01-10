@@ -3,17 +3,8 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="">
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{" "}
-        <span className="">
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+    <footer className="bg-white flex absolute bottom-8 ml-4 h-20 lg:block rounded-2xl   shadow-lg w-60 dark:bg-gray-700">
+      <a>User data</a>
     </footer>
   );
 }
