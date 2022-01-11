@@ -4,6 +4,7 @@ import Music from "../components/Music";
 import Calender from "../components/Calender";
 import Messages from "../components/Messages";
 import Google from "../components/Google";
+import Users from "../components/Users";
 
 export default function AppArea() {
   return (

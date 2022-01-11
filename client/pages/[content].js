@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../ui/Header/header";
-
+import Footer from "../ui/footer";
 import Sidebar from "../ui/sidebar";
 
 import AppArea from "../ui/AppArea";

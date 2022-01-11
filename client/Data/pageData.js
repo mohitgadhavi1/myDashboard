@@ -2,26 +2,49 @@ import { MdOutlineExplore, MdEmojiFlags } from "react-icons/md";
 import { AiOutlineDollar } from "react-icons/ai";
 import { LightningBoltIcon } from "@heroicons/react/outline";
 
-class Page {
-  constructor(name, menu, icon) {
-    this.name = name;
-    this.menu = menu;
-    this.icon = icon;
-  }
-}
-
-const country = new Page(
-  "country",
-  [["explore", "economy", "fire power", "democracy"]],
-  [
-    <MdOutlineExplore />,
-    <AiOutlineDollar />,
-    <LightningBoltIcon />,
-    <MdEmojiFlags />,
-  ]
-);
-const stocks = new Page("stocks", []);
-const socials = new Page("socials", []);
-const apps = new Page("apps", []);
-let Data;
-export default Data = [country, stocks, socials, apps];
+export default pageData = [
+  {
+    id: 0,
+    name: "country",
+    menu: ["explore", "economy", "fire power", "democracy"],
+    icon: [
+      <MdOutlineExplore />,
+      <AiOutlineDollar />,
+      <LightningBoltIcon />,
+      <MdEmojiFlags />,
+    ],
+  },
+  {
+    id: 1,
+    name: "stocks",
+    menu: ["expl", "eco", "fire", "democ"],
+    icon: [
+      <MdOutlineExplore />,
+      <AiOutlineDollar />,
+      <LightningBoltIcon />,
+      <MdEmojiFlags />,
+    ],
+  },
+  {
+    id: 2,
+    name: "socials",
+    menu: ["exp-l", "ec-o", "fi-re", "d-emoc"],
+    icon: [
+      <MdOutlineExplore />,
+      <AiOutlineDollar />,
+      <LightningBoltIcon />,
+      <MdEmojiFlags />,
+    ],
+  },
+  {
+    id: 3,
+    name: "apps",
+    menu: ["ex.pl", "e.co", "fi.re", "d.emoc"],
+    icon: [
+      <MdOutlineExplore />,
+      <AiOutlineDollar />,
+      <LightningBoltIcon />,
+      <MdEmojiFlags />,
+    ],
+  },
+];

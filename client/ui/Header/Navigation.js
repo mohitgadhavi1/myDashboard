@@ -8,10 +8,10 @@ export default function Navigation() {
       <ul className=" flex items-baseline space-x-4">
         {Data.map((item) => (
           <li className="list-none" key={item.id}>
-            <Link href={item.name}>
+            <Link key={item.id} href={`${item.name}`}>
               <a
-                id={item.id}
-                name={item.name}
+                key={item.id}
+                href={`${item.name}`}
                 className={
                   "text-gray-300 hover:bg-gray-700 hover:text-white  px-3 py-2 rounded-md text-sm font-medium focus:bg-gray-900 text-white "
                 }
